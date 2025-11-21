@@ -1,0 +1,57 @@
+# FastAPI Framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.6
+pydantic-settings==2.7.1
+
+# Database
+sqlalchemy==2.0.37
+psycopg2-binary==2.9.10
+alembic==1.14.1
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.20
+email-validator==2.2.0
+cryptography==46.0.3
+
+# PDF Processing
+pdfplumber==0.11.5
+PyPDF2==3.0.1
+
+# AI/ML - LangChain Stack
+langchain==0.3.14
+langchain-groq==0.2.2
+langchain-core==0.3.28
+langchain-community==0.3.14
+langgraph==0.2.68
+langsmith==0.2.13
+
+# HTTP Client
+httpx==0.28.1
+aiohttp==3.13.2
+
+# Data Processing
+pandas==2.3.3
+numpy==2.2.2
+python-dateutil==2.9.0.post0
+
+# Environment Management
+python-dotenv==1.0.1
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+
+# Utilities
+pydantic-extra-types==2.10.6
+typing-extensions==4.12.2
+
+# Additional Dependencies
+jwt==1.4.0
+aiosignal==1.4.0
+attrs==25.4.0
+certifi==2025.11.12
+charset-normalizer==3.4.4
+distro==1.9.0
