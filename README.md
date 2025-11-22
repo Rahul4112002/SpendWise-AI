@@ -1,4 +1,4 @@
-# 🎉 PennyWise AI - Autonomous Financial Coaching Agent
+# 🎉 SpendWise AI - Autonomous Financial Coaching Agent
 
 **InTech Problem Statement 1 Implementation**
 
