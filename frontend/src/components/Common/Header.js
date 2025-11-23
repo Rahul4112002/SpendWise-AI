@@ -24,6 +24,7 @@ const Header = () => {
             <Link to="/dashboard" style={styles.navLink}>Dashboard</Link>
             <Link to="/transactions" style={styles.navLink}>Transactions</Link>
             <Link to="/upload" style={styles.navLink}>Upload</Link>
+            <Link to="/email-sync" style={styles.navLink}>📧 Email Sync</Link>
             <Link to="/reports" style={styles.navLink}>Reports</Link>
             <Link to="/ai-chat" style={styles.navLink}>AI Chat</Link>
             <button onClick={handleLogout} style={styles.logoutBtn}>Logout</button>

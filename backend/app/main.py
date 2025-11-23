@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.database import engine, Base
 from app.core.config import settings
-from app.api.v1.endpoints import auth, transactions, bank_statements, users, analytics, ai, budgets, categories
+from app.api.v1.endpoints import auth, transactions, bank_statements, users, analytics, ai, budgets, categories, email_integration
 import os
 
 # Import all models to ensure they are registered with SQLAlchemy
@@ -39,6 +39,7 @@ app.include_router(analytics.router, prefix="/api/v1/analytics", tags=["Analytic
 app.include_router(ai.router, prefix="/api/v1/ai", tags=["AI Coach"])
 app.include_router(budgets.router, prefix="/api/v1/budgets", tags=["Budgets"])
 app.include_router(categories.router, prefix="/api/v1/categories", tags=["Categories"])
+app.include_router(email_integration.router, prefix="/api/v1/email", tags=["Email Integration"])
 
 @app.get("/")
 async def root():

@@ -8,6 +8,7 @@ import ExpenseTracker from './components/Dashboard/ExpenseTracker';
 import UploadStatement from './components/BankStatement/UploadStatement';
 import Reports from './components/Dashboard/Reports';
 import AIChat from './components/AI/AIChat';
+import EmailIntegration from './components/Email/EmailIntegration';
 import Header from './components/Common/Header';
 import Footer from './components/Common/Footer';
 import PrivateRoute from './components/Common/PrivateRoute';
@@ -60,6 +61,14 @@ function App() {
                 element={
                   <PrivateRoute>
                     <AIChat />
+                  </PrivateRoute>
+                } 
+              />
+              <Route 
+                path="/email-sync" 
+                element={
+                  <PrivateRoute>
+                    <EmailIntegration />
                   </PrivateRoute>
                 } 
               />
