@@ -12,8 +12,13 @@ class Settings(BaseSettings):
     VERSION: str = "1.0.0"
     DEBUG: bool = os.getenv("DEBUG", "False") == "True"
     
-    # Database
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://postgres:password@localhost:5432/pennywise")
+    # Database - Supabase PostgreSQL
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://postgres:password@db.project.supabase.co:5432/postgres")
+    
+    # Supabase Configuration
+    SUPABASE_URL: Optional[str] = os.getenv("SUPABASE_URL")
+    SUPABASE_ANON_KEY: Optional[str] = os.getenv("SUPABASE_ANON_KEY")
+    SUPABASE_SERVICE_KEY: Optional[str] = os.getenv("SUPABASE_SERVICE_KEY")
     
     # Security
     SECRET_KEY: str = os.getenv("SECRET_KEY", "your-secret-key-change-in-production")
@@ -39,5 +44,6 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         case_sensitive = True
+        extra = "ignore"  # Ignore extra fields in .env
 
 settings = Settings()

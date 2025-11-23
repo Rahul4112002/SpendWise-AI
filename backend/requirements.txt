@@ -21,16 +21,20 @@ pdfplumber==0.11.5
 PyPDF2==3.0.1
 
 # AI/ML - LangChain Stack
-langchain==0.3.14
-langchain-groq==0.2.2
-langchain-core==0.3.28
-langchain-community==0.3.14
-langgraph==0.2.68
-langsmith==0.2.13
+langchain
+langchain-groq
+langchain-core
+langchain-community
+langgraph
+langsmith
 
 # HTTP Client
 httpx==0.28.1
 aiohttp==3.13.2
+
+# Supabase
+supabase>=2.0.0
+postgrest>=0.10.0
 
 # Data Processing
 pandas==2.3.3
@@ -57,5 +61,5 @@ charset-normalizer==3.4.4
 distro==1.9.0
 
 # Email Integration
-imap-tools==1.7.7
+imap-tools==1.11.0
 email-reply-parser==0.5.12
